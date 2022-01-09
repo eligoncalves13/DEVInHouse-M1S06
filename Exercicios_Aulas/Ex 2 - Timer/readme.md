@@ -7,3 +7,5 @@ Queremos utilizar um timer nas nossas reuniões mas as opções que encontramos 
 Ideia de layout:
 
 <img src="https://lh6.googleusercontent.com/fhGEtikp6gYrkdLm4WjZPdDvscih4oXx6SScT-95WmZtbI7W6QV9AkYQ62pGtcimHeDWXrCh5VEwC_udUzCtxViP7ZUVch04r4bPqAdxUCw83naegcCIEmYEMhAoYMf669lvjqo7vATx" alt="img" style="zoom:67%;" />
+
+[Link HTML](https://raw.githack.com/eligoncalves13/DEVInHouse-M1S06/main/Exercicios_Aulas/Ex%202%20-%20Timer/index.html)
