@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(187, 184, 184);
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    background-color: rgb(230, 227, 227);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(139, 139, 139);
+    padding: 20px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h2 {
+    font-weight: lighter;
+}
+
+input {
+    background-color: rgb(187, 184, 184);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(139, 139, 139);
+    margin: 10px;
+    padding: 10px 0;
+    outline: none;
+    text-align: center;
+    width: 200px;  
+}
+
+::placeholder {
+    color: rgb(0, 0, 0); 
+}
+
+.btn button {
+    background-color: rgb(187, 184, 184);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(139, 139, 139);
+    cursor: pointer;
+    height: 30px;
+    margin: 10px 5px;
+    outline: none;
+    width: 30px;
+}
+
+#result {
+    background-color: rgb(230, 227, 227);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(139, 139, 139);
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+    main, #result {
+        width: 300px;
+    }
+}
+

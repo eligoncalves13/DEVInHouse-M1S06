@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEE;
+    color: #FFF;
+    font-family: 'Open Sans';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    background-color: #457296;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bolder;
+    padding: 10px;
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+    text-align: center;  
+    width: 100%;
+}
+
+#form {
+    background-color: #333;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 25px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form label[for="name"], label[for="email"], label[for="job"], label[for="text-area"]{
+    color: #457296;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 10px;
+    text-transform: uppercase;   
+}
+
+#form input {
+    background-color: #EEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin: 10px;
+    outline: none;
+    padding: 10px;
+    width: 350px;  
+}
+
+#form textarea {
+    background-color: #EEE;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+}
+
+#form input:hover, #form textarea:hover {
+    background-color: #a3bbcf;
+}
+
+input[type="file"] {
+   display: none; 
+}
+
+label[for="file"] {
+    background-color: #457296;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-size: smaller;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#drop_zone {
+    align-items: center;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    width: 100%;
+}
+
+footer { 
+    background-color: #333;
+    border: none;
+    padding: 10px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer button {
+    background-color: #457296;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Open Sans';
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Input CheckBox */
+.job {
+    display: block;
+    cursor: pointer;
+    margin: 20px;
+    position: relative;
+    padding-left: 35px;
+    user-select: none;
+}
+
+.job input {
+    display: none;
+}
+
+.checkmark {
+    background-color: #EEE;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.job:hover input ~ .checkmark {
+    background-color: #a3bbcf;
+}
+
+.job input:checked ~ .checkmark {
+    background-color: #457296;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.job input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.job .checkmark:after {
+    border: solid #FFF;
+    border-width: 0 3px 3px 0;
+    left: 9px;
+    top: 5px;
+    height: 10px;
+    transform: rotate(45deg);
+    width: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    header h1{
+        font-size: 16px;
+    }
+
+    #form {
+        width: 250px;
+    }
+
+    #form label[for="name"], label[for="email"], label[for="job"], label[for="text-area"], label[for="file"]{
+        font-size: 12px;
+    }
+
+    #form input  {
+        height: 30px;
+        width: 100%;
+    }
+
+    #form textarea {
+        height: 100px;
+        width: 100%;
+    }
+
+    #form button {
+        font-size: 12px;
+    }
+
+    #job label {
+        font-size: 12px;
+        
+    }
+
+    .checkmark {
+        margin-top: 2px;
+    }
+}

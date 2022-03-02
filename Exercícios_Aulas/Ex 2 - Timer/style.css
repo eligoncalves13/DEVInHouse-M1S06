@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(228, 170, 63);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 250px;
+    width: 450px;  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(228, 170, 63);
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+}
+
+.buttons { 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    color: rgb(34, 41, 77);
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 60px;
+}
+
+#start {
+    background-color: rgb(106, 103, 145);
+    color: white;
+}
+
+#stop {
+    background-color: rgb(236, 132, 46);
+    color: white;  
+}
+
+.check {
+    background-color: rgb(34, 41, 77);
+    color: white
+}
+
+button:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
